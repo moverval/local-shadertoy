@@ -1,0 +1,10 @@
+[package]
+name = "shadertoy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.47", features = ["derive"] }
+gl = "0.14.0"
+glium = "0.36.0"
+

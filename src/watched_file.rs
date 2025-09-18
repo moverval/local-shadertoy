@@ -1,4 +1,8 @@
-use std::{fs, io, path::{Path, PathBuf}, time::{Duration, SystemTime}};
+use std::{
+    fs,
+    path::{Path, PathBuf},
+    time::SystemTime,
+};
 
 pub struct WatchedFile {
     path: PathBuf,

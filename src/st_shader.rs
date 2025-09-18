@@ -1,5 +1,3 @@
-use std::{fs, io, path::{Path, PathBuf}, time::SystemTime};
-
 pub struct ShadertoyShader {
     content: String,
 }
@@ -10,9 +8,7 @@ impl ShadertoyShader {
         full.push_str(content.as_str());
         full.push_str(include_str!("res/fragmentFooter.glsl"));
 
-        ShadertoyShader {
-            content: full,
-        }
+        ShadertoyShader { content: full }
     }
 
     pub fn as_glsl(&mut self) -> &str {
